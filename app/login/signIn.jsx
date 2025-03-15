@@ -1,8 +1,12 @@
 import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Colors from '../../constant/colors'
+import {useRouter} from 'expo-router'
 
 export default function SignIn() {
+
+	const router = useRouter();
+
 	return (
 		<View style={{
 			padding: 25
@@ -31,7 +35,8 @@ export default function SignIn() {
 				}}>Login</Text>
 			</TouchableOpacity>
 
-						<TouchableOpacity style={styles.buttonCreate}>
+						<TouchableOpacity style={styles.buttonCreate}
+						onPress={()=> router.push('login/signUp')}>
 				<Text style={{
 					fontSize:17,
 					color: Colors.PRIMARY,
