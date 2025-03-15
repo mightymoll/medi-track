@@ -4,10 +4,10 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 import {getAuth} from 'firebase/auth'
 
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-	// apiKey is stored in .env file
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
   authDomain: "medi-track-95941.firebaseapp.com",
   projectId: "medi-track-95941",
   storageBucket: "medi-track-95941.firebasestorage.app",
