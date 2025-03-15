@@ -1,10 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import {Redirect} from 'expo-router'
 
-export default function index() {
+export default function HomeScreen() {
 	return (
 		<View>
-			<Text>it's working !</Text>
+			<Text>Home Screen</Text>
+			<Redirect href={'login'}/>
 		</View>
 	)
 }

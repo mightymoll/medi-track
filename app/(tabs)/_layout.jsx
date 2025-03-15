@@ -11,14 +11,14 @@ export default function TabLayout() {
 		}}>
 			<Tabs.Screen name='index'
 			options={{
-				tabBarLabel: "Home",
+				tabBarLabel: 'Home',
 				tabBarIcon:({color, size})=>(
 				<FontAwesome name="home" size={size} color={color} />
 				)
 			}} />
 			<Tabs.Screen name='AddNew'
 						options={{
-				tabBarLabel: "Add New",
+				tabBarLabel: 'Add New',
 				tabBarIcon:({color, size})=>(
 				<FontAwesome name="plus-square" size={size} color={color} />
 				)
